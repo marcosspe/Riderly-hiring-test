@@ -11,11 +11,234 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/af77a5e392.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
 
-    
+
+  <body>
+    <!-- Header Menu -->
+    <nav class="navbar align-items-center row">
+      <div class="col">
+        <a class="text-dark mr-3" href="#">Contact Us </a>
+        <a class="text-dark" href="#">Support </a>
+      </div>
+      <div class="col text-center">
+        <h1 class="logoNav">Riderly</h1>
+      </div>
+      <div class="col text-right">
+        <div class="btn-group">
+          <button
+            type="button"
+            class="btn dropdown-toggle text-dark"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Welcome, John
+            <i class="fas fa-chevron-down arrowDown ml-1"></i>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+            <button class="dropdown-item" type="button">Option 1</button>
+            <button class="dropdown-item" type="button">Option 2</button>
+            <button class="dropdown-item" type="button">Option 3</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Recent Invoices -->
+    <div class="container rounded-lg bg-white my-5">
+      <div class="container p-5">
+        <div class="row align-items-center">
+          <div class="col">
+            <h3 class="text-primary titleInvoices">Recent Invoices</h3>
+          </div>
+          <div class="col text-right">
+            <a class="text-primary goList" href="#">Go to Invoices List</a>
+          </div>
+        </div>
+        <div class="row align-items-center border-bottom py-4">
+          <div class="col-4 data">Invoice Number</div>
+          <div class="col data">Date</div>
+          <div class="col data">Amount</div>
+          <div class="col data">Status</div>
+        </div>
+        <div class="row align-items-center border-bottom py-4">
+          <div class="col-4 text-primary">#1</div>
+          <div class="col">7/2/2020</div>
+          <div class="col">$10.00</div>
+          <div class="col">Pending</div>
+        </div>
+        <div class="row align-items-center border-bottom py-4">
+          <div class="col-4 text-primary">#2</div>
+          <div class="col">7/2/2020</div>
+          <div class="col">$40.00</div>
+          <div class="col text-success">Paid</div>
+        </div>
+        <div class="row align-items-center border-bottom py-4">
+          <div class="col-4 text-primary">#3</div>
+          <div class="col">7/8/2020</div>
+          <div class="col">$120.00</div>
+          <div class="col text-success">Paid</div>
+        </div>
+        <div class="row align-items-center border-bottom py-4">
+          <div class="col-4 text-primary">#4</div>
+          <div class="col">7/2/2020</div>
+          <div class="col">$70.00</div>
+          <div class="col">Pending</div>
+        </div>
+        <div class="row align-items-center border-bottom py-4">
+          <div class="col-4 text-primary">#5</div>
+          <div class="col">7/8/2020</div>
+          <div class="col">$80.00</div>
+          <div class="col text-success">Paid</div>
+        </div>
+        <div class="row align-items-center border-bottom py-4">
+          <div class="col-4 text-primary">#2</div>
+          <div class="col">7/2/2020</div>
+          <div class="col">$40.00</div>
+          <div class="col text-success">Paid</div>
+        </div>
+        <div class="row align-items-center border-bottom py-4">
+          <div class="col-4 text-primary">#3</div>
+          <div class="col">7/8/2020</div>
+          <div class="col">$120.00</div>
+          <div class="col text-success">Paid</div>
+        </div>
+        <div class="row align-items-center border-bottom py-4">
+          <div class="col-4 text-primary">#4</div>
+          <div class="col">7/2/2020</div>
+          <div class="col">$70.00</div>
+          <div class="col">Pending</div>
+        </div>
+        <div class="row align-items-center py-4">
+          <div class="col-4 text-primary">#5</div>
+          <div class="col">7/8/2020</div>
+          <div class="col">$80.00</div>
+          <div class="col text-success">Paid</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Settings -->
+    <div class="container rounded-lg bg-white my-5">
+      <div class="container p-5">
+        <div class="row align-items-center">
+          <div class="col">
+            <h3 class="text-primary titleInvoices">Settings</h3>
+          </div>
+          <div class="col text-right">
+            <button type="button" class="btn btn-primary rounded-pill px-4">
+              View all settings
+            </button>
+          </div>
+        </div>
+        <div class="row align-items-end justify-content-between pt-5">
+          <div class="col-3">Profile</div>
+          <div class="col-3">Shipping</div>
+          <div class="col-3">Payment</div>
+        </div>
+        <div class="row align-items-center justify-content-between mt-2">
+          <div class="col-3">
+            <div class="container cards p-4">
+              <p class="textCard mb-0">John Test</p>
+              <p class="textCard mb-5">john@test.com</p>
+              <a href="#" class="link">Edit</a>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="container cards p-4">
+              <p class="textCard mb-5">
+                We have no default address on file for this account.
+              </p>
+              <a href="#" class="link">Create New Address</a>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="container cards p-4">
+              <p class="textCard mb-5">
+                We have no default credit on file for this account.
+              </p>
+              <a href="#" class="link">Add a Credit Card</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid bg-dark py-5 d-flex">
+        <div class="container m-0">
+            <h1 class="logoFoot">Riderly</h1>
+            <p class="textFooter">
+                Offering quality products and supplies <br />
+                for bike dealers and teams
+              </p>
+        </div>
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col text-white">Company</div>
+                <div class="col text-white">Policies</div>
+                <div class="col text-white">Quick Contact</div>
+            </div>
+            <div class="row">
+                <a class="col textFooter" href="#">Privacy Policy</a>
+                <a class="col textFooter" href="#">Terms & Conditions</a>
+                <a class="col textFooter" href="#">Phone: (+598) 99 123 456 </a>
+            </div>
+            <div class="row">
+                <a class="col textFooter" href="#">About Us</a>
+                <a class="col textFooter" href="#">Shopping Policy</a>
+                <a class="col textFooter" href="#">Email: myaccount@riderly.com</a>
+            </div>
+            <div class="row">
+                <a class="col textFooter" href="#">FAQ</a>
+                <a class="col textFooter" href="#">Privacy Terms</a>
+                <a class="col textFooter" href="#">Hours: Mon-Fri 8am – 7pm</a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footbar -->
+    <div class="container-fluid d-flex align-items-center justify-content-between footBar">
+        <div class="container">
+            <a class="text-white mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="text-white mx-2" href="#"><i class="fab fa-youtube"></i></i></a>
+            <a class="text-white mx-2" href="#"><i class="fab fa-instagram"></i></i></i></a>
+        </div>
+        <div class="container">
+            <p class="text-white float-right pt-3">2020 Riderly Inc.</p>
+
+        </div>
+    </div>
+
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"

@@ -1,0 +1,90 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  background: #e5e5e5;
+}
+
+.navbar {
+  background: white;
+  /* position: absolute; */
+  /* width: 1440px; */
+  height: 80px;
+  left: 0px;
+  top: 0px;
+}
+
+.logoNav {
+  font-family: "Russo One", sans-serif;
+  /* position: absolute; */
+  /* left: 46.46%;
+  right: 46.43%;
+  top: 1.41%;
+  bottom: 96.36%; */
+  font-size: 28px;
+  /* line-height: 34px; */
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.arrowDown {
+  color: #93939f;
+}
+
+.goList {
+  text-decoration: underline;
+}
+.goList:hover {
+  color: darkblue;
+  text-decoration: underline 2px;
+}
+
+.titleInvoices {
+  font-size: 23px;
+}
+
+.data {
+  font-size: 12px;
+  color: #93939f;
+}
+
+.cards {
+  background-color: #f8f8f9;
+}
+
+.link {
+  font-size: 12px;
+  color: #4264e3;
+}
+
+.textCard {
+  color: #93939f;
+}
+
+.logoFoot {
+  font-family: "Russo One", sans-serif;
+  color: white;
+  font-size: 30px;
+}
+
+.textFooter {
+  color: white;
+  font-size: 12px;
+}
+
+.textFooter:hover {
+  text-decoration: underline;
+  color: white;
+  font-size: 12px;
+}
+
+.footBar {
+  background-color: #2a2a30;
+  height: 50px;
+}
