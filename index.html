@@ -36,144 +36,153 @@
 
   <body>
     <!-- Header Menu -->
-    <nav class="navbar align-items-center row">
-      <div class="col">
-        <a class="text-dark mr-3" href="#">Contact Us </a>
-        <a class="text-dark" href="#">Support </a>
-      </div>
-      <div class="col text-center">
+    <div class="container text-center">
         <h1 class="logoNav">Riderly</h1>
-      </div>
-      <div class="col text-right">
-        <div class="btn-group">
-          <button
-            type="button"
-            class="btn dropdown-toggle text-dark"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Welcome, John
-            <i class="fas fa-chevron-down arrowDown ml-1"></i>
-          </button>
-          <div class="dropdown-menu dropdown-menu-right">
-            <button class="dropdown-item" type="button">Option 1</button>
-            <button class="dropdown-item" type="button">Option 2</button>
-            <button class="dropdown-item" type="button">Option 3</button>
-          </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse m-2" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="text-dark mr-3" href="#">Contact Us </a>
+              <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+            </li>
+            <li class="nav-item">
+                <a class="text-dark" href="#">Support </a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn dropdown-toggle text-dark p-0"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Welcome, John
+                  <i class="fas fa-chevron-down arrowDown ml-1"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <button class="dropdown-item" type="button">Option 1</button>
+                  <button class="dropdown-item" type="button">Option 2</button>
+                  <button class="dropdown-item" type="button">Option 3</button>
+                </div>
+              </div>
+          </span>
         </div>
-      </div>
     </nav>
 
     <!-- Recent Invoices -->
-    <div class="container rounded-lg bg-white my-5">
+    <div class="container containerInvoices">
       <div class="container p-5">
-        <div class="row align-items-center">
-          <div class="col">
-            <h3 class="text-primary titleInvoices">Recent Invoices</h3>
+        <div class="row align-items-center mb-4">
+          <div class="col-12 col-md-6">
+            <h3 class="titles text-md-left text-center">Recent Invoices</h3>
           </div>
-          <div class="col text-right">
-            <a class="text-primary goList" href="#">Go to Invoices List</a>
+          <div class="col-12 col-md-6 text-md-right text-center">
+            <a class="goList" href="#">Go to Invoices List</a>
           </div>
         </div>
         <div class="row align-items-center border-bottom py-4">
-          <div class="col-4 data">Invoice Number</div>
-          <div class="col data">Date</div>
-          <div class="col data">Amount</div>
-          <div class="col data">Status</div>
+          <div class="col-3 col-md-4 data">Invoice Number</div>
+          <div class="col-3 col-md data">Date</div>
+          <div class="col-3 col-md data">Amount</div>
+          <div class="col-3 col-md data">Status</div>
         </div>
         <div class="row align-items-center border-bottom py-4">
-          <div class="col-4 text-primary">#1</div>
-          <div class="col">7/2/2020</div>
-          <div class="col">$10.00</div>
-          <div class="col">Pending</div>
+          <div class="col-2 col-md-4 invoiceNumber">#1</div>
+          <div class="col-4 col-md">7/2/2020</div>
+          <div class="col-3 col-md">$10.00</div>
+          <div class="col-3 col-md">Pending</div>
         </div>
         <div class="row align-items-center border-bottom py-4">
-          <div class="col-4 text-primary">#2</div>
-          <div class="col">7/2/2020</div>
-          <div class="col">$40.00</div>
-          <div class="col text-success">Paid</div>
+          <div class="col-2 col-md-4 invoiceNumber">#2</div>
+          <div class="col-4 col-md">7/2/2020</div>
+          <div class="col-3 col-md">$40.00</div>
+          <div class="col-3 col-md paid">Paid</div>
         </div>
         <div class="row align-items-center border-bottom py-4">
-          <div class="col-4 text-primary">#3</div>
-          <div class="col">7/8/2020</div>
-          <div class="col">$120.00</div>
-          <div class="col text-success">Paid</div>
+          <div class="col-2 col-md-4 invoiceNumber">#3</div>
+          <div class="col-4 col-md">7/8/2020</div>
+          <div class="col-3 col-md">$120.00</div>
+          <div class="col-3 col-md paid">Paid</div>
         </div>
         <div class="row align-items-center border-bottom py-4">
-          <div class="col-4 text-primary">#4</div>
-          <div class="col">7/2/2020</div>
-          <div class="col">$70.00</div>
-          <div class="col">Pending</div>
+          <div class="col-2 col-md-4 invoiceNumber">#4</div>
+          <div class="col-4 col-md">7/2/2020</div>
+          <div class="col-3 col-md">$70.00</div>
+          <div class="col-3 col-md">Pending</div>
         </div>
         <div class="row align-items-center border-bottom py-4">
-          <div class="col-4 text-primary">#5</div>
-          <div class="col">7/8/2020</div>
-          <div class="col">$80.00</div>
-          <div class="col text-success">Paid</div>
+          <div class="col-2 col-md-4 invoiceNumber">#5</div>
+          <div class="col-4 col-md">7/8/2020</div>
+          <div class="col-3 col-md">$80.00</div>
+          <div class="col-3 col-md paid">Paid</div>
         </div>
         <div class="row align-items-center border-bottom py-4">
-          <div class="col-4 text-primary">#2</div>
-          <div class="col">7/2/2020</div>
-          <div class="col">$40.00</div>
-          <div class="col text-success">Paid</div>
+          <div class="col-2 col-md-4 invoiceNumber">#2</div>
+          <div class="col-4 col-md">7/2/2020</div>
+          <div class="col-3 col-md">$40.00</div>
+          <div class="col-3 col-md paid">Paid</div>
         </div>
         <div class="row align-items-center border-bottom py-4">
-          <div class="col-4 text-primary">#3</div>
-          <div class="col">7/8/2020</div>
-          <div class="col">$120.00</div>
-          <div class="col text-success">Paid</div>
+          <div class="col-2 col-md-4 invoiceNumber">#3</div>
+          <div class="col-4 col-md">7/8/2020</div>
+          <div class="col-3 col-md">$120.00</div>
+          <div class="col-3 col-md paid">Paid</div>
         </div>
         <div class="row align-items-center border-bottom py-4">
-          <div class="col-4 text-primary">#4</div>
-          <div class="col">7/2/2020</div>
-          <div class="col">$70.00</div>
-          <div class="col">Pending</div>
+          <div class="col-2 col-md-4 invoiceNumber">#4</div>
+          <div class="col-4 col-md">7/2/2020</div>
+          <div class="col-3 col-md">$70.00</div>
+          <div class="col-3 col-md">Pending</div>
         </div>
         <div class="row align-items-center py-4">
-          <div class="col-4 text-primary">#5</div>
-          <div class="col">7/8/2020</div>
-          <div class="col">$80.00</div>
-          <div class="col text-success">Paid</div>
+          <div class="col-2 col-md-4 invoiceNumber">#5</div>
+          <div class="col-4 col-md">7/8/2020</div>
+          <div class="col-3 col-md">$80.00</div>
+          <div class="col-3 col-md paid">Paid</div>
         </div>
       </div>
     </div>
 
     <!-- Settings -->
-    <div class="container rounded-lg bg-white my-5">
+    <div class="container containerSettings">
       <div class="container p-5">
         <div class="row align-items-center">
-          <div class="col">
-            <h3 class="text-primary titleInvoices">Settings</h3>
+          <div class="col-12 col-md-6">
+            <h3 class="titles text-md-left text-center">Settings</h3>
           </div>
-          <div class="col text-right">
-            <button type="button" class="btn btn-primary rounded-pill px-4">
+          <div class="col-12 col-md-6 text-md-right text-center">
+            <button type="button" class="btn buttonSettings px-4">
               View all settings
             </button>
           </div>
         </div>
-        <div class="row align-items-end justify-content-between pt-5">
-          <div class="col-3">Profile</div>
-          <div class="col-3">Shipping</div>
-          <div class="col-3">Payment</div>
-        </div>
-        <div class="row align-items-center justify-content-between mt-2">
-          <div class="col-3">
-            <div class="container cards p-4">
+        <div class="row align-items-center justify-content-between mt-5">
+          <div class="col-12 col-md-3">
+              <p class="mb-2">Profile</p>
+            <div class="container cards p-4 mb-md-0 mb-5">
               <p class="textCard mb-0">John Test</p>
               <p class="textCard mb-5">john@test.com</p>
               <a href="#" class="link">Edit</a>
             </div>
           </div>
-          <div class="col-3">
-            <div class="container cards p-4">
+          <div class="col-12 col-md-3">
+            <p class="mb-2">Shipping</p>
+            <div class="container cards p-4 mb-md-0 mb-5">
               <p class="textCard mb-5">
                 We have no default address on file for this account.
               </p>
               <a href="#" class="link">Create New Address</a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-12 col-md-3">
+            <p class="mb-2">Payment</p>
             <div class="container cards p-4">
               <p class="textCard mb-5">
                 We have no default credit on file for this account.
@@ -186,37 +195,42 @@
     </div>
 
     <!-- Footer -->
-    <div class="container-fluid bg-dark py-5 d-flex">
-        <div class="container m-0">
-            <h1 class="logoFoot">Riderly</h1>
-            <p class="textFooter">
-                Offering quality products and supplies <br />
-                for bike dealers and teams
-              </p>
+    <div class="container-fluid bg-dark">
+        <div class="row">
+            <div class="col-12 col-md-6 py-5 ">    
+                <div class="container ">
+                    <h1 class="logoFoot text-md-left text-center">Riderly</h1>
+                    <p class="textFooter text-md-left text-center ">
+                        Offering quality products and supplies <br />
+                        for bike dealers and teams
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 py-5">
+                <div class="container">
+                    <div class="row mb-3">
+                        <div class="col-3 col-md text-white">Company</div>
+                        <div class="col-3 col-md text-white">Policies</div>
+                        <div class="col-6 col-md text-white">Quick Contact</div>
+                    </div>
+                    <div class="row">
+                        <a class="col-3 col-md textFooterLink" href="#">Privacy Policy</a>
+                        <a class="col-3 col-md textFooterLink" href="#">Terms & Conditions</a>
+                        <p class="col-6 col-md textFooter" href="#">Phone: (+598) 99 123 456 </p>
+                    </div>
+                    <div class="row">
+                        <a class="col-3 col-md textFooterLink" href="#">About Us</a>
+                        <a class="col-3 col-md textFooterLink" href="#">Shopping Policy</a>
+                        <p class="col-6 col-md textFooter" href="#">Email: myaccount@riderly.com</p>
+                    </div>
+                    <div class="row">
+                        <a class="col-3 col-md textFooterLink" href="#">FAQ</a>
+                        <a class="col-3 col-md textFooterLink" href="#">Privacy Terms</a>
+                        <p class="col-6 col-md textFooter" href="#">Hours: Mon-Fri 8am – 7pm</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="container">
-            <div class="row mb-3">
-                <div class="col text-white">Company</div>
-                <div class="col text-white">Policies</div>
-                <div class="col text-white">Quick Contact</div>
-            </div>
-            <div class="row">
-                <a class="col textFooter" href="#">Privacy Policy</a>
-                <a class="col textFooter" href="#">Terms & Conditions</a>
-                <a class="col textFooter" href="#">Phone: (+598) 99 123 456 </a>
-            </div>
-            <div class="row">
-                <a class="col textFooter" href="#">About Us</a>
-                <a class="col textFooter" href="#">Shopping Policy</a>
-                <a class="col textFooter" href="#">Email: myaccount@riderly.com</a>
-            </div>
-            <div class="row">
-                <a class="col textFooter" href="#">FAQ</a>
-                <a class="col textFooter" href="#">Privacy Terms</a>
-                <a class="col textFooter" href="#">Hours: Mon-Fri 8am – 7pm</a>
-            </div>
-        </div>
-      </div>
     </div>
 
     <!-- Footbar -->
@@ -227,7 +241,7 @@
             <a class="text-white mx-2" href="#"><i class="fab fa-instagram"></i></i></i></a>
         </div>
         <div class="container">
-            <p class="text-white float-right pt-3">2020 Riderly Inc.</p>
+            <p class="text-white float-right pt-3 textInc">2020 Riderly Inc.</p>
 
         </div>
     </div>
